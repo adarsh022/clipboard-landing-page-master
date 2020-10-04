@@ -4,9 +4,10 @@ body{
   box-sizing: border-box;
   font-family: 'Bai Jamjuree', sans-serif;
 }
+
 h1{
   color:#4c555c;
-  font-size: 2.1em;
+  font-size: 2.8em;
   padding: 0;
   margin: 0;
   display: flex;
@@ -14,16 +15,17 @@ h1{
 }
 
 h2{
-  font-size: 1.7em;
+  font-size: 2.2em;
   text-align: center;
   color: #4c555c;
   padding: 0;
   margin: 0;
+  margin-top: 100px;
 }
 
 h3{
   color: #4c555c;
-  font-size: 1.4em;
+  font-size: 1.5em;
   text-align: center;
   margin: 0px;
   margin-top: 50px;
@@ -33,15 +35,21 @@ p{
   font-size: 1em;
   text-align:center;
 }
-#header{
+header{
+  min-height: 100vh;
   background-image: url(images/bg-header-desktop.png);
 	background-repeat: no-repeat;
-	background-size: 100% 100%;
-  padding: 100px 0px;
-  margin: ;
+  background-size: 100% 100%;
+  display: flex;
+  justify-content: space-around;
+}
+#header{
+  padding: 25px;
   display: flex;
   align-items: center;
   flex-direction: column;
+  max-width: 710px;
+  margin: auto;
 }
 
 #logo_header{
@@ -50,46 +58,61 @@ p{
 
 .button{
   display: flex;
+  flex-wrap: wrap;
 }
 .buttonIOS{
+  flex: 1;
   border-bottom: 3px solid #359c87;
   background-color: #26bba5;
   color: #ffffff;
   text-decoration: none;
   font-size: 1.2em;
+  text-align:center;
   border-radius: 50px;
   margin: 5px;
   padding: 10px 30px;
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.363);
+  min-width: 160px;
 }
 
 .buttonMAC{
+  flex: 1;
   border-bottom: 3px solid #5964be;
   background-color: #5f75fe;
   color: #ffffff;
   text-decoration: none;
   font-size: 1.2em;
+  text-align:center;
   border-radius: 50px;
   margin: 5px;
   padding: 10px 30px;
   box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.24);
+  min-width: 160px;
 }
 
-@media only screen and (max-width: 376px) {
-  #header{
-    background-image: url(images/bg-header-mobile.png);
-  }
-  .button{
-    flex-direction: column;
+@media only screen and (max-width: 500px) {
+  header{
+    background-image: url(images/bg-header-mobile.png); 
   }
 }
 
 #intro{
   display: flex;
+  justify-content: space-evenly;
+  min-height: 100vh;
+  /* flex-wrap: wrap; */
 }
-#mac_img{
-  background-image: url(images/image-computer.png);
-  background-repeat: no-repeat;
-	background-size: 100% 100%;
-  padding: 125px;
+#mac_img img{
+  flex: 1 1 auto;
+  max-height:80%;
+  max-width: 90%;
+  padding: 25px;
+  min-height: 40%;
+  min-width: 50%;
+}
+
+#intro_details{
+  padding: 25px;
+  flex: 1 0 auto;
+  min-width: 40%;
 }
