@@ -4,15 +4,91 @@ body{
   box-sizing: border-box;
   font-family: 'Bai Jamjuree', sans-serif;
 }
+h1{
+  color:#4c555c;
+  font-size: 2.1em;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  text-align: center;
+}
 
+h2{
+  font-size: 1.7em;
+  text-align: center;
+  color: #4c555c;
+  padding: 0;
+  margin: 0;
+}
+
+h3{
+  color: #4c555c;
+  font-size: 1.4em;
+  text-align: center;
+  margin: 0px;
+  margin-top: 50px;
+}
+p{
+  color: #bdc2c5;
+  font-size: 1em;
+  text-align:center;
+}
 #header{
-  margin: 20px 150px;
+  background-image: url(images/bg-header-desktop.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+  padding: 100px 0;
   display: flex;
   align-items: center;
   flex-direction: column;
 }
 
 #logo_header{
-  color:#27bca7;
-  font-size: 40px;
+  padding: 20px;
+}
+
+.button{
+  display: flex;
+}
+.buttonIOS{
+  border-bottom: 3px solid #359c87;
+  background-color: #26bba5;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.2em;
+  border-radius: 50px;
+  margin: 5px;
+  padding: 10px 30px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.363);
+}
+
+.buttonMAC{
+  border-bottom: 3px solid #5964be;
+  background-color: #5f75fe;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.2em;
+  border-radius: 50px;
+  margin: 5px;
+  padding: 10px 30px;
+  box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.24);
+}
+
+@media only screen and (max-width: 376px) {
+  #header{
+    background-image: url(images/bg-header-mobile.png);
+  }
+  .button{
+    flex-direction: column;
+  }
+}
+
+#intro{
+  display: flex;
+}
+#mac_img{
+  background-image: url(images/image-computer.png);
+  background-repeat: no-repeat;
+	background-size: 100% 100%;
+  padding: 125px;
 }
