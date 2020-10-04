@@ -37,7 +37,8 @@ p{
   background-image: url(images/bg-header-desktop.png);
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
-  padding: 100px 0;
+  padding: 100px 0px;
+  margin: ;
   display: flex;
   align-items: center;
   flex-direction: column;
