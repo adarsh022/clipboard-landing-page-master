@@ -30,11 +30,13 @@ h3{
   margin: 0px;
   margin-top: 50px;
 }
+
 p{
   color: #bdc2c5;
   font-size: 1em;
   text-align:center;
 }
+
 header{
   min-height: 100vh;
   background-image: url(images/bg-header-desktop.png);
@@ -43,6 +45,7 @@ header{
   display: flex;
   justify-content: space-around;
 }
+
 #header{
   padding: 25px;
   display: flex;
@@ -60,6 +63,7 @@ header{
   display: flex;
   flex-wrap: wrap;
 }
+
 .buttonIOS{
   flex: 1;
   border-bottom: 3px solid #359c87;
@@ -100,8 +104,14 @@ header{
   display: flex;
   justify-content: space-evenly;
   min-height: 100vh;
-  /* flex-wrap: wrap; */
+  flex-wrap: wrap;
 }
+
+#mac_img{
+  display: flex;
+  justify-content: stretch;
+}
+
 #mac_img img{
   flex: 1 1 auto;
   max-height:80%;
