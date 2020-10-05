@@ -20,7 +20,7 @@ h2{
   color: #4c555c;
   padding: 0;
   margin: 0;
-  margin-top: 100px;
+  /* margin-top: 50px; */
 }
 
 h3{
@@ -35,6 +35,7 @@ p{
   color: #bdc2c5;
   font-size: 1em;
   text-align:center;
+  margin-bottom: 0;
 }
 
 header{
@@ -99,6 +100,9 @@ header{
   header{
     background-image: url(images/bg-header-mobile.png); 
   }
+  #menu{
+    flex-direction: column;
+  }
 }
 
 @media screen and (max-width: 900px){
@@ -112,12 +116,31 @@ header{
   .grid{
     flex-direction: column;
   }
+  footer{
+    flex-direction: column;
+    padding: 0;
+  }
+}
+
+#intro_section{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+#intro_heading{
+  padding: 25px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  max-width: 710px;
+  margin: auto;
 }
 
 #intro{
   display: flex;
-  min-height: 100vh;
   align-items: center;
+  margin: auto 0;
 }
 
 #mac_img{
@@ -164,7 +187,11 @@ header{
 }
 
 #details{
-  min-height: 100vh;
+  min-height: 80vh;
+  display: flex;
+  justify-items: center;
+  flex-direction: column;
+  margin-top: 50px;
 }
 
 .grid{
@@ -186,9 +213,6 @@ header{
   min-width: 60px;
 }
 
-#logo{
-  margin: 100px 200px;
-}
 #logo img{
   padding: 20px;
 }
@@ -202,7 +226,56 @@ header{
   margin: auto;
 }
 
-footer{
-  display: flex;
-  
+#ending h2{
+  margin: 0;
 }
+
+footer{
+  background-color: #f5f6f8;
+  display: flex;
+  justify-content: space-around ;
+  align-items: center;
+  padding: 20px 0;
+}
+
+#footer_logo{
+  font-size: 5em;
+  color: #26bba4;
+}
+
+#menu{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  padding-top: 0;
+  flex-wrap: wrap;
+}
+
+#menu p{
+  padding: 10px;
+  color: #8b8c91;
+}
+
+#social{
+  display: flex;
+}
+
+#social img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 10px;
+}
+
+
+
+
+______________________________________________________________________________________________________________
+    __     _____    __     ____       __     _     _       ____     __     _     _   _____    _____    _     _
+    / |    /    )   / |    /    )   /    )   /    /        /    )   / |    /|   /    /    )   /    '   |    / 
+---/__|---/----/---/__|---/___ /----\-------/___ /--------/____/---/__|---/-| -/----/----/---/__-------|---/--
+  /   |  /    /   /   |  /    |      \     /    /   ===  /        /   |  /  | /    /    /   /          |  /   
+_/____|_/____/___/____|_/_____|__(____/___/____/________/________/____|_/___|/____/____/___/____ ______|_/____
+                                                                                                        /     
+                                                                                                    (_ /      
